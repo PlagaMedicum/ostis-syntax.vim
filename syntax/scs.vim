@@ -36,7 +36,7 @@ syn match scsConnector "\([\.]\{0,2\}>\|<[\.]\{0,2\}\)[^|/-~]"
 
 " Identifiers
 "" scs Constants
-syn keyword scsIdtfs nrel_main_idtf nrel_idtf nrel_sc_text_translation
+syn keyword scsIdtfs nrel_main_idtf nrel_idtf nrel_sc_text_translation nrel_subdividing
 syn keyword scsIdtfs rrel_example rrel_key_sc_element
 syn keyword scsIdtfs not_enough_formed_structure explanation
 syn match scsIdtfs "\<sc_\(node\|link\|edge_dcommon\|edge_ucommon\|edge_main\|edge_access\)\>"
@@ -51,7 +51,7 @@ syn keyword scpIdtfs nrel_goto nrel_then nrel_else
 syn keyword scpIdtfs rrel_in rrel_out rrel_operators rrel_init rrel_params
 syn keyword scpType rrel_scp_const rrel_scp_var rrel_const rrel_var rrel_node rrel_arc rrel_link rrel_common rrel_access rrel_pos rrel_neg rrel_fuz rrel_temp rrel_perm rrel_pos_const_perm rrel_set rrel_erase
 syn keyword scpIdtfs nrel_scp_var_value
-syn keyword scpImport rrel_params rrel_assign 
+syn keyword scpImport rrel_params rrel_assign rrel_fixed
 syn match scpImport "\<\(active_\)\?\(agent_\)\?scp_\(program\|agent\|program_agent\|procedure\|operator_executable_after\w\+\)\>"
 syn keyword scpFunc return call syncronize
 syn match scpString "\<string\(\(To\(Upper\|Lower\)Case\)\|Replace\|\(Ends\|Starts\)With\|Slice\|Sub\|Len\|Split\|If\(Eq\|Gr\)\)\>"
@@ -85,7 +85,7 @@ hi def link scsSChar    SpecialChar
 hi def link scsPathFile Directory
 hi def link scsSCharErr Error
 
-hi def link scsSqBraces    Label
+hi def link scsSqBraces    Tag
 hi def link scsSqBracesVar Identifier
 hi def link scsBraces      Operator
 
