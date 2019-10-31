@@ -36,7 +36,7 @@ syn match scsConnector "\([\.]\{0,2\}>\|<[\.]\{0,2\}\)[^|/-~]"
 
 " Identifiers
 "" scs Constants
-syn keyword scsIdtfs nrel_main_idtf nrel_idtf nrel_sc_text_translation nrel_subdividing
+syn keyword scsIdtfs nrel_main_idtf nrel_idtf nrel_sc_text_translation nrel_subdividing nrel_inclusion
 syn keyword scsIdtfs rrel_example rrel_key_sc_element
 syn keyword scsIdtfs not_enough_formed_structure explanation
 syn match scsIdtfs "\<sc_\(node\|link\|edge_dcommon\|edge_ucommon\|edge_main\|edge_access\)\>"
