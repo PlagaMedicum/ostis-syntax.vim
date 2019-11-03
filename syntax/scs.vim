@@ -66,6 +66,7 @@ syn match scsNrel "\<nrel_\w\+"
 syn match scsRrel "\<rrel_\w\+"
 syn match scsConcept "\<concept_\w\+"
 syn match scsSection "\<section_\w\+"
+syn match scsSubjdomain "\<subject_domain_of_\w\+"
 syn match scsLang "\<lang_\w\+\>"
 "" scp Aliases
 syn match scpRrels "\<rrel_\d\+"
@@ -110,11 +111,12 @@ hi def link scpSys     Function
 hi def link scpIf      Function
 hi def link scpCont    Function
 
-hi def link scsNrel    Identifier
-hi def link scsRrel    Identifier
-hi def link scsConcept Identifier
-hi def link scsSection Identifier
-hi def link scsLang    Identifier
+hi def link scsNrel       Identifier
+hi def link scsRrel       Identifier
+hi def link scsConcept    Identifier
+hi def link scsSection    Identifier
+hi def link scsSubjdomain Identifier
+hi def link scsLang       Identifier
 
 hi def link scpRrels   Tag
 hi def link scpProc    Function
