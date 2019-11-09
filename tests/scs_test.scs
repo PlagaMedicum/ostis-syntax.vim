@@ -34,7 +34,7 @@ proc_smams;;
 -> rrel_12: dsd;;
 <- return;; <- genElStr51;; <- searchSet;; ifGr varErase sys_gen contATg printEl
 
-context_technology_OSTIS_and_Metasystem_IMS_in_the_Global_knowledge_base = [*^"file://context_technology_OSTIS_and_Metasystem_IMS_in_the_Global_knowledge_base.scsi"*];;
+context_technology_OSTIS_and_Metasystem_IMS_in_the_Global_knowledge_base = [*^"file://context_technology_OSTIS_and-Metasystem_IMS_in_the_Global/*.scsi"*];;
 
 [123.32E-23 +43.2e+32 -23 Команда вывода этапов решения: $ui_arg_1]
 

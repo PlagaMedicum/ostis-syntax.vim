@@ -17,7 +17,7 @@ syn match scsNumber "[\-+]\?\<\d\+\>" contained
 syn match scsFloat "[\-+]\?\<\d\+[\.,]\d\+\(\(e\|E\)[\-+]\?\d\+\)\?\>" contained
 syn match scsSCharErr "\\." contained
 syn match scsSChar '\\["\\n]' contained
-syn match scsPathFile "\(\<file\>\)\|[:/.]" contained
+syn match scsPathFile "\<file\(:/[/A-Za-z0-9_\-\.\*]\+\)\?" contained
 syn region scsString start='"' skip='\\"' end='"' contains=scsNumber, scsFloat, scsSChar, scsPathFile, scsSCharErr
 
 " Braces
@@ -66,7 +66,7 @@ syn match scsNrel "\<nrel_\w\+"
 syn match scsRrel "\<rrel_\w\+"
 syn match scsConcept "\<concept_\w\+"
 syn match scsSection "\<section_\w\+"
-syn match scsSubjdomain "\<subject_domain_of_\w\+"
+syn match scsSubjdomain "\<\(subject_domain\|subjdomain\)_of_\w\+"
 syn match scsLang "\<lang_\w\+\>"
 "" scp Aliases
 syn match scpRrels "\<rrel_\d\+"
