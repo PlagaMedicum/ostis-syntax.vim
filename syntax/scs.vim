@@ -41,7 +41,7 @@ syn keyword scsIdtfs rrel_example rrel_key_sc_element
 syn keyword scsIdtfs not_enough_formed_structure explanation 
 syn keyword scsIdtfs sc_model_of_knowledge_base
 syn keyword scsIdtfs nrel_section_decomposition nrel_section_base_order
-syn keyword scsIdtfs atomic_section
+syn match scsIdtfs "\<\(non_\)\?atomic_section\>"
 syn keyword scsIdtfs ui_user_command_class_noatom ui_start_sc_element
 syn keyword scsIdtfs nrel_ui_commands_decomposition
 syn match scsIdtfs "\<sc_\(node\|link\|edge_dcommon\|edge_ucommon\|edge_main\|edge_access\)\>"
