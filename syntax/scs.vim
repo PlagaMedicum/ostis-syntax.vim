@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Semantic Code String
 " Maintainer: Aliaksandr Klijeu
-" Version: 0.1
+" Version: 0.2
 
 if exists("b:current_syntax")
   finish
@@ -38,7 +38,12 @@ syn match scsConnector "\([\.]\{0,2\}>\|<[\.]\{0,2\}\)[^|/-~]"
 "" scs Constants
 syn keyword scsIdtfs nrel_main_idtf nrel_idtf nrel_sc_text_translation nrel_subdividing nrel_inclusion
 syn keyword scsIdtfs rrel_example rrel_key_sc_element
-syn keyword scsIdtfs not_enough_formed_structure explanation
+syn keyword scsIdtfs not_enough_formed_structure explanation 
+syn keyword scsIdtfs sc_model_of_knowledge_base
+syn keyword scsIdtfs nrel_section_decomposition nrel_section_base_order
+syn keyword scsIdtfs atomic_section
+syn keyword scsIdtfs ui_user_command_class_noatom
+syn keyword scsIdtfs nrel_ui_commands_decomposition
 syn match scsIdtfs "\<sc_\(node\|link\|edge_dcommon\|edge_ucommon\|edge_main\|edge_access\)\>"
 syn match scsEmpty "[\.]\{3\}"
 syn match scsType "\<sc_edge_\(pos\|neg\|fuz\|perm\|temp\)\>"
@@ -68,6 +73,8 @@ syn match scsConcept "\<concept_\w\+"
 syn match scsSection "\<section_\w\+"
 syn match scsSubjdomain "\<\(subject_domain\|subjdomain\)_of_\w\+"
 syn match scsLang "\<lang_\w\+\>"
+syn match scsLexeme "\<l_\w\+\>"
+syn match scsUI "\<ui_\w\+"
 "" scp Aliases
 syn match scpRrels "\<rrel_\d\+"
 syn match scpRrels "\<rrel_set_\d\+"
@@ -117,6 +124,8 @@ hi def link scsConcept    Identifier
 hi def link scsSection    Identifier
 hi def link scsSubjdomain Identifier
 hi def link scsLang       Identifier
+hi def link scsLexeme     Identifier
+hi def link scsUI         Identifier
 
 hi def link scpRrels   Tag
 hi def link scpProc    Function
