@@ -77,6 +77,7 @@ syn match scsSubjdomain "\<\(subject_domain\|subjdomain\)_of_\w\+"
 syn match scsLang "\<lang_\w\+\>"
 syn match scsLexeme "\<l_\w\+\>"
 syn match scsUI "\<ui_\w\+"
+syn match scsUIArg "\<ui_arg_\d\+"
 syn match scText "\<sc_text_\w\+"
 syn match scsQuestion "\<question_\w\+"
 "" scp Aliases
@@ -99,7 +100,7 @@ hi def link scsPathFile Directory
 hi def link scsSCharErr Error
 
 hi def link scsSqBraces    Tag
-hi def link scsSqBracesVar Identifier
+hi def link scsSqBracesVar Define
 hi def link scsBraces      Operator
 
 hi def link scsOperator  Operator
@@ -129,6 +130,7 @@ hi def link scsSection    Identifier
 hi def link scsSubjdomain Identifier
 hi def link scsLang       Identifier
 hi def link scsLexeme     Identifier
+hi def link scsUIArg      Define
 hi def link scsUI         Identifier
 hi def link scText        Identifier
 hi def link scsQuestion   Identifier
