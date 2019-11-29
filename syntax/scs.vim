@@ -78,7 +78,7 @@ syn match scsLang "\<lang_\w\+\>"
 syn match scsLexeme "\<l_\w\+\>"
 syn match scsUI "\<ui_\w\+"
 syn match scText "\<sc_text_\w\+"
-syn match scsQuestion "\<quetion_\w\+"
+syn match scsQuestion "\<question_\w\+"
 "" scp Aliases
 syn match scpRrels "\<rrel_\d\+"
 syn match scpRrels "\<rrel_set_\d\+"
