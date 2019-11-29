@@ -54,8 +54,9 @@ syn match scsVar "[\.]\{1,2\}\<\w\+"
 "" scp Constants
 syn keyword scpIdtfs nrel_goto nrel_then nrel_else
 syn keyword scpIdtfs rrel_in rrel_out rrel_operators rrel_init rrel_params
-syn keyword scpType rrel_scp_const rrel_scp_var rrel_const rrel_var rrel_node rrel_arc rrel_link rrel_common rrel_access rrel_pos rrel_neg rrel_fuz rrel_temp rrel_perm rrel_pos_const_perm rrel_set rrel_erase
 syn keyword scpIdtfs nrel_scp_var_value
+syn keyword scpIdtfs scp_program_sc_text
+syn keyword scpType rrel_scp_const rrel_scp_var rrel_const rrel_var rrel_node rrel_arc rrel_link rrel_common rrel_access rrel_pos rrel_neg rrel_fuz rrel_temp rrel_perm rrel_pos_const_perm rrel_set rrel_erase
 syn keyword scpImport rrel_params rrel_assign rrel_fixed
 syn match scpImport "\<\(active_\)\?\(agent_\)\?scp_\(program\|agent\|program_agent\|procedure\|operator_executable_after\w\+\)\>"
 syn keyword scpFunc return call syncronize
@@ -75,11 +76,13 @@ syn match scsSubjdomain "\<\(subject_domain\|subjdomain\)_of_\w\+"
 syn match scsLang "\<lang_\w\+\>"
 syn match scsLexeme "\<l_\w\+\>"
 syn match scsUI "\<ui_\w\+"
+syn match scText "\<sc_text_\w\+"
 "" scp Aliases
 syn match scpRrels "\<rrel_\d\+"
 syn match scpRrels "\<rrel_set_\d\+"
 syn match scpGSFunc "\<\(gen\|search\|erase\)\(El\|Set\)\(\(Str\)\d\+\)\?\>"
 syn match scpProc "\<proc_\w\+"
+syn match scpAgent "\<agent_\w\+"
 
 " Highlighting definitions
 hi def link scsTodo     Todo
@@ -126,9 +129,11 @@ hi def link scsSubjdomain Identifier
 hi def link scsLang       Identifier
 hi def link scsLexeme     Identifier
 hi def link scsUI         Identifier
+hi def link scText        Identifier
 
 hi def link scpRrels   Tag
 hi def link scpProc    Function
+hi def link scpAgent   Identifier
 hi def link scpGSFunc  Function
 "--------------------------------"
 
