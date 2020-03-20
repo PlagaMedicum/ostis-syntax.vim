@@ -1,4 +1,4 @@
-# OSTIS syntax highlighting for Vim editor
+# OSTIS syntax highlighting for Vim and Neo-vim editors
 
 [![License](https://img.shields.io/github/license/PlagaMedicum/ostis-syntax.vim.svg)](https://github.com/PlagaMedicum/ostis-syntax.vim/blob/master/LICENSE)
 
@@ -12,7 +12,7 @@
 
 ![scs](img/scs.png "SCS")
 
-Note, that colour theme depends of your vim configuration.
+Note, that colour theme depends on your vim configuration.
 
 ## Installation
 
@@ -31,4 +31,4 @@ NeoBundle 'PlagaMedicum/ostis-syntax.vim'
 
 ### Manual
 
-Run [./install.sh](install.sh) to copy files to `~/.vim`.
+Run [./install.sh](install.sh) to copy files in `~/.vim`.
